@@ -1,0 +1,1742 @@
+<HTML>
+
+<HEAD>
+<TITLE>GDN AR</TITLE>
+<LINK REL=stylesheet HREF="..\Auxiliary Files\style.css" TYPE="text/css">
+</HEAD>
+
+<BODY TOPMARGIN=1 LEFTMARGIN=2 MARGINRIGHT=1.1 MARGINBOTTOM=1 LINK=#000000 VLINK=#000000 ALINK=#000000>
+
+<TABLE CLASS=MAINBODY WIDTH=1233 CELLSPACING=0 CELLPADDING=1>
+
+ <!-- ############## -->
+ <!-- #  [HEADER]  # -->
+ <!-- ############## -->
+ <TR HEIGHT=80 VALIGN=TOP>
+  <TD>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+    <TR>
+     <TD CLASS=MAINBODY WIDTH=55 ROWSPAN=2><IMG SRC="..\Images\Main.jpg"></TD>
+     <TD CLASS=PROJECTNAME>GDN AR</TD>
+    </TR>
+    <TR><TD CLASS=SUBTITLE>Project Documentation</TD></TR>
+   </TABLE>
+  </TD>
+ </TR>
+
+ <!-- ################ -->
+ <!-- #  [LOCATION]  # -->
+ <!-- ################ -->
+ <TR>
+  <TD>
+   <!---------- [List of objects] ---------->
+   <TABLE  CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+    <TR>
+     <TD><A HREF="..\GDNAR(20231218125741).html" CLASS=LOCATION></A></TD>
+    </TR>
+   </TABLE>
+  </TD>
+ </TR>
+
+ <!-- ############################################# -->
+ <!-- #  [OBJECT: Cantidad Año Actual Acumulado]  # -->
+ <!-- ############################################# -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="B9EE53C743F191E0ACF305B17180C5DD"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad Año Actual Acumulado</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Total\Cantidad Items Vendidos</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos en lo que va del año</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Año Actual Acumulado<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ##################################### -->
+ <!-- #  [OBJECT: Cantidad Año Anterior]  # -->
+ <!-- ##################################### -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="6477A6A64319A7EF602CE49890968B31"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad Año Anterior</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Total\Cantidad Items Vendidos</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos de hace un año</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Año Anterior<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ################################################# -->
+ <!-- #  [OBJECT: Cantidad Año Anterior - Ecommerce]  # -->
+ <!-- ################################################# -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="C5B7CD2A4B94A187556AF7B7F1CE2380"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad Año Anterior - Ecommerce</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Operativa\Venta Operativa Ecommerce\DEV</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Cantidad de items vendidos en pedido de ecommerce el año anterior</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Sum
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Filter.bmp">&nbsp;Canal de venta = Ecommerce
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Año Anterior<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ################################################# -->
+ <!-- #  [OBJECT: Cantidad Año Anterior - Ecommerce]  # -->
+ <!-- ################################################# -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="208908FC40D89E4D7CACDA9D52C3CCF5"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad Año Anterior - Ecommerce</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Total\Venta Ecommerce\Cantidad</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Cantidad de items vendidos en pedido de ecommerce el año anterior</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Filter.bmp">&nbsp;Canal de venta = Ecommerce
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Año Anterior<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ############################################### -->
+ <!-- #  [OBJECT: Cantidad Año Anterior Acumulado]  # -->
+ <!-- ############################################### -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="90D5048B4ADABBC69A7DFC8244C41F54"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad Año Anterior Acumulado</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Total\Cantidad Items Vendidos</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos en lo que va del añomes de hoy un año anterior</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Año Anterior Acumulado<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ################################################ -->
+ <!-- #  [OBJECT: Cantidad Año Anterior Comparable]  # -->
+ <!-- ################################################ -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="518275234BCE8BFD74A2558C83491EE8"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad Año Anterior Comparable</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Total\Cantidad Items Vendidos</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos del día siguiente a hoy hace un año</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Año Anterior Comparable<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ################################# -->
+ <!-- #  [OBJECT: Cantidad Asignada]  # -->
+ <!-- ################################# -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="D93720594905D23F603148B3BA71181E"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad Asignada</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Reabastecimiento\Asignaciones</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD></TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Sum
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="53.html#283BE62F42BE810931C1DE8992918498" CLASS=MAINBODY>Cant Asignada</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ############################################ -->
+ <!-- #  [OBJECT: Cantidad Asignada Prescalade]  # -->
+ <!-- ############################################ -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="7F993F6C4D93D7E6826155A2AB594A74"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad Asignada Prescalade</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Reabastecimiento\Asignaciones</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Indicador que muestra la cantidad de unidades que fueron ordenadas en una asignación a tienda</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Sum
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="53.html#3D0852324464346C19481B8CB5A62CC7" CLASS=MAINBODY>Cant Asignada Prescaled</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ################################## -->
+ <!-- #  [OBJECT: Cantidad Cancelada]  # -->
+ <!-- ################################## -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="8E76B79C4DC58767E47C5997CD0C1CC5"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad Cancelada</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Reabastecimiento\Asignaciones</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Indicador que muestra la cantidad de unidades que fueron canceladas en una asignación a tienda</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Sum
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="53.html#01E55DE14EA12842564C3699D307A3E9" CLASS=MAINBODY>Cant Canceladas</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ####################################### -->
+ <!-- #  [OBJECT: Cantidad colocada - ECO]  # -->
+ <!-- ####################################### -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="D5CF154B4F75B335769EDCBF41849515"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad colocada - ECO</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Centro de Distribución\Licencias</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD></TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Sum
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#2522AF414D22E26FB92A64A9712F2275" CLASS=MAINBODY>Cantidad Colocada - ECO</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ################################## -->
+ <!-- #  [OBJECT: Cantidad Corregida]  # -->
+ <!-- ################################## -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="B71B3AE241B6FC86F3B7EB8053ED3C3D"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad Corregida</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Bizmetrik\Venta Basal</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD></TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Sum
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#71F95FDB4A427948AE8E6EB4F0AF5F48" CLASS=MAINBODY>Cantidad Corregida</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ################################# -->
+ <!-- #  [OBJECT: Cantidad de Citas]  # -->
+ <!-- ################################# -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="0F447A954C88F000744850B04BCA5702"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Citas</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Centro de Distribución</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Indicador que muestra la cantidad de citas para recepción de una órden de compra en el centro de cistribución</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Count
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="8.html#1AA71D56498718ABC948D7A1B35D6DE5" CLASS=MAINBODY>Cita</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ##################################################### -->
+ <!-- #  [OBJECT: Cantidad de estados por viaje y envío]  # -->
+ <!-- ##################################################### -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="9D022B354A0B1449B8447F9E92315787"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de estados por viaje y envío</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Centro de Distribución</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD></TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Sum
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="61.html#DA92152247019E6A95D56C95EB4CF7ED" CLASS=MAINBODY>Nr Estados</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="32.html#0E7D751A46A68A5F6C34F4AEB3E52348" CLASS=MAINBODY>Número de Envío</A></TD>
+         <TD CLASS=BORDERRB>standard</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="32.html#CB2F076A4F17BA507E6DA49791A2BCC9" CLASS=MAINBODY>Número de Viaje</A></TD>
+         <TD CLASS=BORDERRB>standard</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ############################################################################### -->
+ <!-- #  [OBJECT: Cantidad de Items Vendidos Año Actual Acumulado Venta Operativa]  # -->
+ <!-- ############################################################################### -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="AFD27CB446087B447950DABC279B8042"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Items Vendidos Año Actual Acumulado Venta Operativa</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Operativa\Cantidad Items Vendidos Venta Operativa</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador cuenta la cantidad de item vendidos a nivel compañia correspondientes a la venta no operativa (Excluye los departamentos 6,21,32,39,49,50,56,60,66,67,68,75,77,85,89 y 99) para el año actual acumulado hasta el dia de ayer</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Filter.bmp">&nbsp;Venta Operativa
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Año Actual Acumulado<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ################################################################################# -->
+ <!-- #  [OBJECT: Cantidad de Items Vendidos Año Anterior Acumulado Venta Operativa]  # -->
+ <!-- ################################################################################# -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="5DCE800D4A232C09B42E6DA861DE8579"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Items Vendidos Año Anterior Acumulado Venta Operativa</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Operativa\Cantidad Items Vendidos Venta Operativa</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos en lo que va del añomes de hoy un año anterior</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Filter.bmp">&nbsp;Venta Operativa
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Año Anterior Acumulado<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ################################################################################## -->
+ <!-- #  [OBJECT: Cantidad de Items Vendidos Año Anterior Comparable Venta Operativa]  # -->
+ <!-- ################################################################################## -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="795ACB9D4E4997413B1AD48411BEB187"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Items Vendidos Año Anterior Comparable Venta Operativa</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Operativa\Cantidad Items Vendidos Venta Operativa</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos del día siguiente a hoy hace un año</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Filter.bmp">&nbsp;Venta Operativa
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Año Anterior Comparable<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ####################################################################### -->
+ <!-- #  [OBJECT: Cantidad de Items Vendidos Año Anterior Venta Operativa]  # -->
+ <!-- ####################################################################### -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="68B2669F4D51BD2FF34F41AC7BBD5BA1"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Items Vendidos Año Anterior Venta Operativa</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Operativa\Cantidad Items Vendidos Venta Operativa</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos de hace un año</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Filter.bmp">&nbsp;Venta Operativa
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Año Anterior<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ################################################################# -->
+ <!-- #  [OBJECT: Cantidad de Items Vendidos Día Anterior Operativa]  # -->
+ <!-- ################################################################# -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="7511A37D476CE2859AF795BF21358058"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Items Vendidos Día Anterior Operativa</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Operativa\Cantidad Items Vendidos Venta Operativa</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos del día anterior</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Filter.bmp">&nbsp;Venta Operativa
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Ayer<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ############################################################################################ -->
+ <!-- #  [OBJECT: Cantidad de Items Vendidos Mes Actual Acumulado Año Anterior Venta Operativa]  # -->
+ <!-- ############################################################################################ -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="D91B307A435942704F6177BFB95A10FE"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Items Vendidos Mes Actual Acumulado Año Anterior Venta Operativa</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Operativa\Cantidad Items Vendidos Venta Operativa</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos en lo que va del mes de hoy un año anterior</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Filter.bmp">&nbsp;Venta Operativa
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Mes Actual Acumulado Año Anterior<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ############################################################################### -->
+ <!-- #  [OBJECT: Cantidad de Items Vendidos Mes Actual Acumulado Venta Operativa]  # -->
+ <!-- ############################################################################### -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="E9FA297947CBF1EFFBF94C962690D024"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Items Vendidos Mes Actual Acumulado Venta Operativa</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Operativa\Cantidad Items Vendidos Venta Operativa</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos en lo que va del mes</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Filter.bmp">&nbsp;Venta Operativa
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Transformation.bmp">&nbsp;Fecha Mes Actual Acumulado<BR>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ########################################################## -->
+ <!-- #  [OBJECT: Cantidad de Items Vendidos Venta Operativa]  # -->
+ <!-- ########################################################## -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="2C732B1B45A98024FBE01A9DEAB82A83"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Items Vendidos Venta Operativa</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Ventas\Venta Operativa\Cantidad Items Vendidos Venta Operativa</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Este indicador muestra la cantidad de productos vendidos</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;ApplyAgg
+       (
+       sum (case when #0 = 38 then 0 else #1 end)
+       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="12.html#8D18748748D5C98B54F3AD9F0F609E89" CLASS=MAINBODY>ID</A>&nbsp;       ,
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="54.html#38E9D653417B5E5EA743FAA8DCD48A84" CLASS=MAINBODY>Cantidad</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Filter.bmp">&nbsp;Venta Operativa
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ######################################################### -->
+ <!-- #  [OBJECT: Cantidad de Lineas Facturadas - Ecommerce]  # -->
+ <!-- ######################################################### -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="62D2E3794A0AF92050750DB1532C4D1E"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Lineas Facturadas - Ecommerce</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Pedidos Ecommerce\Facturado</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Numero de lineas facturadas en el pedido de ecommerce</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Sum
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="57.html#EC97005C4FEDF7DB919BB7833152CC88" CLASS=MAINBODY>Fact Cab Cantidad Lineas  - Ecommerce</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ######################################################### -->
+ <!-- #  [OBJECT: Cantidad de Lineas Originales - Ecommerce]  # -->
+ <!-- ######################################################### -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="F7B77F9E41C69087E619D58EA454F0BD"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Lineas Originales - Ecommerce</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Pedidos Ecommerce\Original</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Numero de lineas originales en el pedido de ecommerce</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Sum
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="61.html#D2024278420A2BA6E63527A1EF6DD5DD" CLASS=MAINBODY>Orig Cab Cantidad Lineas - Ecommerce</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ########################################################## -->
+ <!-- #  [OBJECT: Cantidad de Pedidos Facturados - Ecommerce]  # -->
+ <!-- ########################################################## -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="404810D0421D772702CB78B3A371A19D"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Pedidos Facturados - Ecommerce</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Pedidos Ecommerce\Facturado</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Numero de pedidos facturados de ecommerce</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Count
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="57.html#A406C2E647CC8034B5018CAED91C214A" CLASS=MAINBODY>Fact Cab Codigopedido - Ecommerce</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Report.bmp">&nbsp;Report Level</TD>
+         <TD CLASS=BORDERRB>None</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+ <!-- ########################################################## -->
+ <!-- #  [OBJECT: Cantidad de Pedidos Originales - Ecommerce]  # -->
+ <!-- ########################################################## -->
+ <TR><TD HEIGHT=25></TD></TR>
+ <TR>
+  <TD VALIGN=TOP COLSPAN=3>
+   <A NAME="9B78A66F4FD804A9194BB09FE52802DD"></A>
+   <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=4 BORDER=1 BORDERCOLOR=#000000><TR><TD>
+    <TABLE CLASS=OBJECTNAME WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD WIDTH=44><IMG SRC="..\Images\MetricL.bmp"></TD><TD>Cantidad de Pedidos Originales - Ecommerce</TD></TR></TABLE>
+    <!--========== SECTION: BASIC PROPERTIES ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>BASIC PROPERTIES</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD>Location:</TD><TD>\GDN AR\Public Objects\Metrics\Pedidos Ecommerce\Original\Nuevas metricas</TD></TR>
+     <TR VALIGN=TOP><TD>Description:</TD><TD>Numero de pedidos originales de ecommerce</TD></TR>
+    </TABLE>
+    <!--========== SECTION: DEFINITION ==========-->
+    <TABLE CLASS=MAINBODY HEIGHT=25><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=SECTIONHEADER WIDTH=100% CELLSPACING=0 CELLPADDING=1><TR><TD>DEFINITION</TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY><TR><TD></TD></TR></TABLE>
+    <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1><COL WIDTH=120>
+     <TR VALIGN=TOP><TD CLASS=BORDERLRTB>Metric type</TD><TD CLASS=BORDERRTB>Simple</TD></TR>
+     <!---------- [Metric Formula] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Formula</TD>
+      <TD CLASS=BORDERRB>
+       <IMG ALIGN=MIDDLE SRC="..\Images\Function.bmp">&nbsp;Sum
+       (
+       <IMG ALIGN=MIDDLE SRC="..\Images\Fact.bmp">&nbsp;<A HREF="61.html#38BFC202449649515ED3D48CA91F6A44" CLASS=MAINBODY>Orig Cab FC_ORIG_ORDERCAB  - Ecommerce</A>
+       )
+      </TD>
+     </TR>
+     <!---------- [Dimensionality] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Dimensionality</TD>
+      <TD CLASS=BORDERRB>
+       <TABLE CLASS=MAINBODY WIDTH=100% CELLSPACING=0 CELLPADDING=1>
+        <COL WIDTH=50%><COL WIDTH=25%><COL WIDTH=25%>
+        <TR ALIGN=CENTER>
+         <TD CLASS=BORDERLRTB BGCOLOR=#DDDDDD WIDTH=50%>TARGET</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>FILTERING</TD>
+         <TD CLASS=BORDERRTB BGCOLOR=#DDDDDD WIDTH=25%>GROUPING</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="9.html#D49D2A694C93DD1DAFBDC1866555783D" CLASS=MAINBODY>Codigo Pedido - Ecommerce</A></TD>
+         <TD CLASS=BORDERRB>standard</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="17.html#7CA1827E4D491A10DE0D17A5F58FA59F" CLASS=MAINBODY>Fecha</A></TD>
+         <TD CLASS=BORDERRB>standard</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+        <TR>
+         <TD CLASS=BORDERLRB><IMG ALIGN=MIDDLE SRC="..\Images\Attribute.bmp">&nbsp;<A HREF="45.html#EC4E7FB344CDA93B7CB03A865A5112B0" CLASS=MAINBODY>Tienda</A></TD>
+         <TD CLASS=BORDERRB>standard</TD>
+         <TD CLASS=BORDERRB>standard</TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+     <!---------- [Condition] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB> Condition</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+     <!---------- [Transformation] ---------->
+     <TR VALIGN=TOP>
+      <TD CLASS=BORDERLRB>Transformation</TD>
+      <TD CLASS=BORDERRB>
+       (nothing)
+      </TD>
+     </TR>
+    </TABLE>
+   </TD></TR></TABLE>
+  </TD>
+ </TR>
+ <TR><TD ALIGN=RIGHT><A CLASS=TOPLINK HREF="#TOP"><A/></TD></TR>
+
+</TABLE>
+
+</BODY>
+
+</HTML>
